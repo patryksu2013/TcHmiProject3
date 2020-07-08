@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="MAIN" Id="{91c6c283-dd89-4a92-a967-3697b25baec0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbRand : DRAND;
+	lrRandomValue : LREAL;
+	rTemp : REAL;
+	rAlarmHigh : REAL := 40.0;
+	rAlarmLow : REAL := -40.0;
+	rWarningHigh : REAL := 30.0;
+	rWarningLow : REAL := -30.0;
+	rVariableOffset: REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbRand(Seed := 0, Num => lrRandomValue);
+rTemp := (LREAL_TO_REAL(lrRandomValue) * 100.0) - 50.0;]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="12" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

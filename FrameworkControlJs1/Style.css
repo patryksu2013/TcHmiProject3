@@ -1,0 +1,80 @@
+﻿/* General theme independed control css. */
+
+/* Styles for the main element */
+.framework-control-js1
+{
+    overflow: hidden;
+
+}
+
+.framework-control-js1-template {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    background-image: linear-gradient(135deg, #eff1f3, #aeb9c2);
+    font-size: 150%;
+}
+
+.framework-control-js1-template-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    column-gap: 5px;
+}
+
+.framework-control-js1-template-variable-name {
+    width: 100%;
+    height: 25px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.framework-control-js1-template-variable-value {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    outline: thin;
+    outline-style: solid;
+    outline-color: gray;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.framework-control-js1-template-variable-unit {
+    width: 100%;
+    height: 25px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* If the main use for this control is interaction
+    uncomment the following lines to give user feedback:
+    This overlays the whole control with a white color
+    and change the mouse cursor */
+
+/*
+.framework-control-js1.tchmi-control-operate-disallowed::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    cursor: not-allowed;
+}
+*/
