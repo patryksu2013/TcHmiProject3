@@ -209,10 +209,8 @@
                 FrameworkControlJs1.prototype.__processValue = function () {
                     var value = this.__variableValue + this.__variableOffset;
                     if ((value <= this.__limitLow) || (value >= this.__limitHigh)) {
-                        //console.log("limit");
                         this.__elementVariableValue.css('background-color', 'red');
                     } else if ((value <= this.__limitLow && value >= this.__warnLow) || (value <= this.__limitHigh && value >= this.__warnHigh)) {
-                        //console.log("warning");
                         this.__elementVariableValue.css('background-color', 'yellow');
                     } else {
                         this.__elementVariableValue.css('background-color', 'white');
