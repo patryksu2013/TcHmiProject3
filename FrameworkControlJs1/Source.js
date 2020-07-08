@@ -294,7 +294,6 @@
                 
                     // call process function to process the new value
                     //this.__processLimitHigh();
-                    this.__elementVariableOffset.attr("value", this.__variableOffset);
                 };
 
                 /**
@@ -333,7 +332,6 @@
                 
                     // call process function to process the new value
                     //this.__processLimitHigh();
-                    this.__elementLimitHighInputBox.attr("value", this.__limitHigh);
                 };
 
                 /**
@@ -372,7 +370,6 @@
                 
                     // call process function to process the new value
                     //this.__processLimitLow();
-                    this.__elementLimitLowInputBox.attr("value", this.__limitLow);
                 };
 
                 /**
@@ -411,7 +408,6 @@
                 
                     // call process function to process the new value
                     // this.__processWarnHigh();
-                    this.__elementWarningHighInputBox.attr("value", this.__warnHigh);
                 };
 
                 /**
@@ -450,7 +446,6 @@
                 
                     // call process function to process the new value
                     // this.__processWarnLow();
-                    this.__elementWarningLowInputBox.attr("value", this.__warnLow);
                 };
 
                 /**
